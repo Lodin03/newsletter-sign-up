@@ -7,11 +7,6 @@ $p-size: 1rem;
 $font-weight-medium: 400;
 $font-weight-dark: 700;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Roboto', sans-serif;
