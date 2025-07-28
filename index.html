@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  
+  <title>Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+  <main>
+    <article class="newsletter-container">
+      <div class="newsletter-container__box" id="signup-form">
+        <div class="newsletter-container__content">
+          <h1 class="newsletter-container__content-title">Stay updated!</h1>
+          <p class="newsletter-container__content-description">Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="newsletter-container__benefits">
+            <div class="newsletter-container__benefit">
+              <img src="assets/images/icon-success.svg" alt="">
+              <p>Product discovery and building what matters</p>
+            </div>
+
+            <div class="newsletter-container__benefit">
+              <img src="assets/images/icon-success.svg" alt="">
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+
+            <div class="newsletter-container__benefit">
+              <img src="assets/images/icon-success.svg" alt="">
+              <p>And much more!</p>
+            </div>
+          </div>
+
+          <div class="newsletter-container__email">
+            <div class="newsletter-container__email-header">
+              <p class="newsletter-container__email-title">Email address</p>
+              <p class="newsletter-container__email-error" id="email-error"></p>
+            </div>
+            <input type="email" name="email" placeholder="email@company.com" required class="newsletter-container__email-input" id="email-input">
+            <button type="button" class="newsletter-container__email-button" id="subscribe-btn">Subscribe to monthly newsletter</button>
+          </div>
+        </div>
+        <picture class="newsletter-container__image">
+          <source media="(max-width: 480px)" srcset="./assets/images/illustration-sign-up-mobile.svg" />
+          <source media="(max-width: 768px)" srcset="./assets/images/illustration-sign-up-tablet.svg" />
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Dashboard illustration" />
+        </picture>
+      </div>
+
+      <!-- Success Card -->
+      <div class="newsletter-container__box newsletter-container__success" id="success-card" style="display: none;">
+        <div class="newsletter-container__content">
+          <div class="newsletter-container__success-icon">
+            <img src="assets/images/icon-success.svg" alt="Success">
+          </div>
+          <h1 class="newsletter-container__content-title">Thanks for subscribing!</h1>
+          <p class="newsletter-container__content-description">
+            A confirmation email has been sent to <strong id="user-email"></strong>. 
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+          <button type="button" class="newsletter-container__email-button" id="dismiss-btn">Dismiss message</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

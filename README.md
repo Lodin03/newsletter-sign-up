@@ -9,8 +9,8 @@
 ## Overview
 
 ### Screenshot
-![Article Preview (Desktop)](assets/images/images/webpage_desktop.png)  
-![Article Preview (Mobile)](assets/images/images/webpage_mobile.png)
+![Newsletter Preview (Desktop)](assets/images/webpage_desktop.png)  
+![Newsletter Preview (Mobile)](assets/images/webpage_mobile.png)
 
 ### Links
 - Solution URL: [GitHub Repository](https://github.com/Lodin03/newsletter-sign-up)
@@ -32,4 +32,4 @@
 
 - GitHub - [Lodin03](https://github.com/Lodin03)
 - LinkedIn - [Lars Odin Tveit Moen](https://www.linkedin.com/in/lars-odin-tveit-moen-736600260/)
-# newsletter-sign-up
+
