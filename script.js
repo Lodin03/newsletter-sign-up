@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Subscribe button click handler
   subscribeBtn.addEventListener('click', function() {
-    const email = emailInput.value.trim();
+    const email = emailInput.value.trim(); // Trim removes whitespace from both ends,s
     
     if (!email) {
       showError('Valid email required');
